@@ -1,4 +1,4 @@
-# Nuclear_Mechano_Response
+# Fibrillar Adhesions Govern Nuclear Mechano Response
 
 Computational model (COMSOL Multiphysics) of how **fibrillar adhesions** anchor the **vimentin** network to regulate **nuclear deformation** and the **timescale of mechanotransduction**.  
 The models reproduce key qualitative behaviors reported in the manuscript, including: (i) maintenance of a flattened nucleus after acute loss of contractility, (ii) delays in adaptation upon substrate softening set by fibrillar-adhesion disassembly, and (iii) protection against excessive nuclear strain during external stretch.

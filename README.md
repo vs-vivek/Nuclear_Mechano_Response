@@ -17,7 +17,7 @@ The models reproduce key qualitative behaviors reported in the manuscript, inclu
 ## Requirements
 
 - **COMSOL Multiphysics**: v6.0 or later  
-- **Module**: Structural Mechanics (required)  
+- **Module**: Solid Mechanics (required)  
 - **OS**: Any OS supported by your COMSOL version (Windows/macOS/Linux)  
 - **Recommended hardware**: Multi-core CPU; **16 GB RAM** (32 GB recommended for large sweeps)
 

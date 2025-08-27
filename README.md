@@ -27,7 +27,7 @@ The models reproduce key qualitative behaviors reported in the manuscript, inclu
 
 1. **Download a model file**
    - Open the `COMSOL Models/` folder in this repository.
-   - Click the `.mph` you want (e.g., baseline or softening/stretch variant).
+   - Click the `.mph` you want 
    - Click **Download** (or **Download raw**).
 
 2. **Open in COMSOL**
@@ -48,9 +48,8 @@ The models reproduce key qualitative behaviors reported in the manuscript, inclu
 
 ## Typical scenarios
 
-- **Acute loss of contractility**: Use the baseline model and set the contractility parameter (`rho`) to zero (or use the preconfigured “loss of contractility” study) to observe nuclear rebound with/without vimentin anchoring.
-- **Substrate softening / adaptation timescale**: Open the softening/adaptation model and run the **Time Dependent** study where substrate modulus decreases at a specified time; examine the lag before nuclear readout decays.
-- **External stretch**: Open the stretch model and adjust the applied strain (e.g., 10–13%) in the relevant boundary load; compute and quantify nuclear area change and stresses.
+- **Acute loss of contractility**: Use the baseline model and set the contractility parameter (`rho`) to zero (or use the preconfigured study) to observe nuclear rebound with/without vimentin anchoring.
+- **External stretch**: Open the stretch model and adjust the applied strain in the relevant boundary load; compute and quantify nuclear area change and stresses.
 
 ---
 

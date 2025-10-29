@@ -17,7 +17,7 @@ The models reproduce key qualitative behaviors reported in the manuscript, inclu
 
 - **`COMSOL Models/`** – folder containing the COMSOL `.mph` model files used in the study  
   (e.g., baseline cell–nucleus model, softening/adaptation scenario, and stretch scenario).
-
+- Refer to the **Instructions.md** for further details on the models and their implementation.  
 > If you only need to run the models, you can **download the `.mph` files directly** from the folder—no cloning required.
 
 ---

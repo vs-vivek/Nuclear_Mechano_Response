@@ -1,7 +1,7 @@
 # Nuclear_Mechano_Response
 
 This repository hosts the code and models developed for the paper titled  
-**"Fibrillar adhesion dynamics govern the timescales of nuclear mechano-response via the vimentin 1 cytoskeleton"**  
+**"Fibrillar adhesion dynamics govern the timescales of nuclear mechano-response via the vimentin cytoskeleton"**  
 currently available on BioRxiv: [https://www.biorxiv.org/content/10.1101/2023.11.08.566191v1](https://www.biorxiv.org/content/10.1101/2023.11.08.566191v1)
 
 ---
@@ -12,39 +12,33 @@ Computational model (COMSOL Multiphysics) of how **fibrillar adhesions** anchor 
 The models reproduce key qualitative behaviors reported in the manuscript, including: (i) maintenance of a flattened nucleus after acute loss of contractility, (ii) delays in adaptation upon substrate changes, and (iii) vimentin-cage stress transmission during stretch.
 
 ---
-
 ## What’s in this repo
 
-- **`COMSOL Models/`** – folder containing the COMSOL `.mph` model files used in the study  
-  (e.g., baseline cell–nucleus model, softening/adaptation scenario, and stretch scenario).
-- Refer to the **COMSOL Models/Instructions.md** or the following details on the specific model files and their implementation.  
-> If you only need to run the models, you can **download the `.mph` files directly** from the folder—no cloning required.
+- **`COMSOL Models/`** – COMSOL `.mph` files used in the study  
+  (baseline cell–nucleus model, adhesion/vimentin interaction, and stretch scenario).
+- You can **download the `.mph` files directly** from this folder to run or inspect the models  
+  in COMSOL—cloning the repo is optional.
 
 ---
 
-# Instructions to use the files
+## COMSOL models and corresponding figures
 
-The directory "COMSOL Models" contains three files, each representing a distinct simulation or study related to nuclear mechano-response. Below is an overview of the contents and their significance:
+All models are fully set up with geometry, materials, physics, and solvers.
 
-## List of Files
+1. **`Model_Sensitivity_Analysis.mph`**  
+   - Stationary sensitivity analysis with nuclear height as the objective.  
+   - Used to generate **SI Table 2**.
 
-1. **Model_Sensitivity_Analysis**  
-   This file contains the already completed Sensitivity Analysis model. It is implemented in a stationary state setting with the objective function as nuclear height.
-2. **Nuclear_Vimentin_Interaction.mph**  
-   The second file includes models for adhesion disassembly simulations.
+2. **`Nuclear_Vimentin_Interaction.mph`**  
+   - Adhesion disassembly / nuclear–vimentin interaction simulations.  
+   - Used for **Fig. 3m** and associated animations of the manuscript.
 
-3. **thickbot_stretch_v2_stationary.mph**  
-   The third file contains the Stretch Simulation model.
-## Significance
+3. **`thickbot_stretch_v2_stationary.mph`**  
+   - Stretch simulation model.  
+   - Used for **Fig. 5i**.
 
-Each file is designed to assist users in reproducing, modifying, or extending various aspects of the nuclear mechano-response simulations. 
+For details on mesh, solver settings, and postprocessing, please refer to the model tree within each `.mph` file.
 
-- The file **Model_Sensitivity_Analysis.mph** can be used to recreate the sensitivities presented in SI Table 2. 
-- **Nuclear_Vimentin_Interaction.mph** is utilized for generating the results shown in Fig. 3m and animations. 
-- The file **thickbot_stretch_v2_stationary.mph** is used for the stretch simulation depicted in Fig. 5i.
-- Users should refer to the model definitions inside each file for specific simulation details, mesh settings, and solver configurations.
-
----
 ---
 
 ## Requirements

@@ -31,11 +31,11 @@ All models are fully set up with geometry, materials, physics, and solvers.
 
 2. **`Nuclear_Vimentin_Interaction.mph`**  
    - Adhesion disassembly / nuclear–vimentin interaction simulations.  
-   - Used for **Fig. 3m** and associated animations of the manuscript.
+   - Used for **Fig. 3m-n** and associated animations/figures in the SI.
 
 3. **`thickbot_stretch_v2_stationary.mph`**  
    - Stretch simulation model.  
-   - Used for **Fig. 5i**.
+   - Used for **Fig. 5c,i**.
 
 For details on mesh, solver settings, and postprocessing, please refer to the model tree within each `.mph` file.
 

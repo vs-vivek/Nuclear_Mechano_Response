@@ -17,9 +17,34 @@ The models reproduce key qualitative behaviors reported in the manuscript, inclu
 
 - **`COMSOL Models/`** – folder containing the COMSOL `.mph` model files used in the study  
   (e.g., baseline cell–nucleus model, softening/adaptation scenario, and stretch scenario).
-- Refer to the **COMSOL Models/Instructions.md** for further details on the models and their implementation.  
+- Refer to the **COMSOL Models/Instructions.md** or the following details on the specific model files and their implementation.  
 > If you only need to run the models, you can **download the `.mph` files directly** from the folder—no cloning required.
 
+---
+
+# Instructions to use the files
+
+The directory "COMSOL Models" contains three files, each representing a distinct simulation or study related to nuclear mechano-response. Below is an overview of the contents and their significance:
+
+## List of Files
+
+1. **Model_Sensitivity_Analysis**  
+   This file contains the already completed Sensitivity Analysis model. It is implemented in a stationary state setting with the objective function as nuclear height.
+2. **Nuclear_Vimentin_Interaction.mph**  
+   The second file includes models for adhesion disassembly simulations.
+
+3. **thickbot_stretch_v2_stationary.mph**  
+   The third file contains the Stretch Simulation model.
+## Significance
+
+Each file is designed to assist users in reproducing, modifying, or extending various aspects of the nuclear mechano-response simulations. 
+
+- The file **Model_Sensitivity_Analysis.mph** can be used to recreate the sensitivities presented in SI Table 2. 
+- **Nuclear_Vimentin_Interaction.mph** is utilized for generating the results shown in Fig. 3m and animations. 
+- The file **thickbot_stretch_v2_stationary.mph** is used for the stretch simulation depicted in Fig. 5i.
+- Users should refer to the model definitions inside each file for specific simulation details, mesh settings, and solver configurations.
+
+---
 ---
 
 ## Requirements
@@ -73,13 +98,18 @@ Key parameters are exposed in **Global Parameters**, including:
 
 ---
 
+## Getting Started
+
+1. Ensure COMSOL Multiphysics is installed on your system.
+2. Open each `.mph` file in COMSOL to explore the geometry, physics settings, and results.
+3. Modify the parameters as needed for your study or experimental setup.
+
+If you have questions about the usage or setup of these files, please refer to the documentation or contact the repository maintainers.
 ## Troubleshooting
 
 - **Slow/large runs**: Start with a coarser mesh; switch to PARDISO solver if available; reduce time span or number of sweep points.
 - **Convergence issues**: Use parameter ramping/continuation; adjust solver tolerances; verify contact/BC definitions; initialize from a previously converged state.
 - **Memory**: Refine only near contact zones and interfaces; limit 3D fields exported per time step.
-
----
 
 ---
 

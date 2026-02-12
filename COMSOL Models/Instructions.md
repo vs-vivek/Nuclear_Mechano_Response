@@ -8,7 +8,7 @@ This directory contains three COMSOL model files, each representing a distinct s
 1. **Model_Sensitivity_Analysis**  
    This file contains the already completed Sensitivity Analysis model. It is implemented in a stationary state setting with the objective function as nuclear height.
 2. **Nuclear_Vimentin_Interaction.mph**  
-   The second file includes models for adhesion disassembly simulations.
+   The second file includes models for adhesion disassembly simulations. Due to file size restrictions, a shortened time version is provided, but can be easily scaled for the desired time duration.
 
 3. **thickbot_stretch_v2_stationary.mph**  
    The third file contain the Stretch Simulation model.
